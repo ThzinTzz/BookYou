@@ -12,14 +12,10 @@
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-<<<<<<< HEAD
-=======
-                <li><a href="catalogo.html">Catálogo</a></li>
->>>>>>> e9b306aa650c45653ec1f2a7bfa9b718caca0de3
                 <li><a href="sobre.html">Sobre nós</a></li>
             </ul>
         </nav>
-        <button class="btn-primary">Cadastrar</button>
+        <button class="btn-primary" id="btn-abrir-cadastro">Cadastrar</button>
     </header>
 
     <main>
@@ -31,7 +27,6 @@
             </div>
         </section>
 
-<!-- ================= SEÇÃO: ROMANCES E SUAS VERTENTES ================= -->
         <section class="apresentacao">
             <p>Romance</p>
             <div class="servicos">
@@ -111,7 +106,6 @@
             </div>
         </section>
         <hr>
-        <!-- ================= SEÇÃO: CLÁSSICOS DA LITERATURA / MOVIMENTOS ================= -->
         <section class="apresentacao">
             <p>Clássicos e Movimentos Literários</p>
             <div class="servicos">
@@ -159,7 +153,6 @@
             </div>
         </section>
         <hr>
-        <!-- ================= SEÇÃO: FANTASIA ================= -->
         <section class="apresentacao">
             <p>Fantasia</p>
             <div class="servicos">
@@ -215,7 +208,6 @@
             </div>
         </section>
         <hr>
-        <!-- ================= SEÇÃO: FICÇÃO E DISTOPIA ================= -->
         <section class="apresentacao">
             <p>Ficção, Filosofia e Distopia</p>
             <div class="servicos">
@@ -279,12 +271,11 @@
             </div>
         </section>
         <hr>
-        <!-- ================= SEÇÃO: MISTÉRIO, TERROR E SUSPENSE ================= -->
         <section class="apresentacao">
             <p>Mistério e Terror</p>
             <div class="servicos">
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="images/umestudo.png" alt="">
                     <h3>Sherlock Holmes: Um Estudo em Vermelho</h3>
                     <p class="author">Arthur Conan Doyle</p>
                     <p class="genre">Mistério</p>
@@ -292,7 +283,7 @@
                     <button class="btn-card">Comprar</button>
                 </div>
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="images/it.png" alt="">
                     <h3>It: A Coisa</h3>
                     <p class="author">Stephen King</p>
                     <p class="genre">Terror</p>
@@ -300,7 +291,7 @@
                     <button class="btn-card">Comprar</button>
                 </div>
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="images/iluminado.png" alt="">
                     <h3>O Iluminado</h3>
                     <p class="author">Stephen King</p>
                     <p class="genre">Terror psicológico</p>
@@ -308,15 +299,7 @@
                     <button class="btn-card">Comprar</button>
                 </div>
                 <div class="card">
-                    <img src="" alt="">
-                    <h3>O Iluminado</h3>
-                    <p class="author">Stephen King</p>
-                    <p class="genre">Terror psicológico</p>
-                    <p class="price">R$ 64,90</p>
-                    <button class="btn-card">Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
+                    <img src="images/sobrou.png" alt="">
                     <h3>E Não Sobrou Nenhum</h3>
                     <p class="author">Agatha Christie</p>
                     <p class="genre">Romance policial</p>
@@ -324,7 +307,7 @@
                     <button class="btn-card">Comprar</button>
                 </div>
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="images/dracula.png" alt="">
                     <h3>Drácula</h3>
                     <p class="author">Bram Stoker</p>
                     <p class="genre">Terror gótico</p>
@@ -335,5 +318,28 @@
             </div>
         </section>
     </main>
+    <div id="modal-cadastro" class="modal-overlay">
+        <div class="modal-content">
+            <span id="btn-fechar-modal" class="modal-close">&times;</span>
+            
+            <h2>Se cadastre agora!</h2>
+            
+            <form id="form-cadastro">
+                <div class="form-group">
+                    <label for="cad-nome">Nome:</label>
+                    <input type="text" id="cad-nome" required placeholder="Matheus, Yuri, Rafael, ...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="cad-email">E-mail:</label>
+                    <input type="email" id="cad-email" required placeholder="fulano@gmail.com">
+                </div>
+            
+                <button type="submit" class="btn-cadastrar-submit">Cadastrar!</button>
+            </form>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
